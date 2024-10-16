@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="หน้ากดเพิ่ม.css">
+    
+</head>
+<body>
+        <header>
+            <div class="header">
+                <span class="header-text">PC Pls</span>
+                <h2><a href="Login.html">Login</a></h2>
+                <h1><a href="buy.html">🛒ชำระเงิน</a></h1>
+                <div class="input-search">
+                    <span class="iconify" data-icon="bytesize:search"></span>
+                    <input type="search" name="search" id="search" placeholder="Search" oninput="filterCars()">
+                  </div>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="หน้าหลัก.html">หน้าหลัก</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <header>
+        
+        <div class="product-container">
+           
+            <div class="product-image">
+                <img src="/product771_800.jpg" alt="">
+            </div>
+            
+         
+            <div class="product-details">
+                <h1>CPU (ซีพียู) INTEL CORE I3-12100F [1700]</h1>
+                <p</p>
+                <p>แบรนด์:INTEL | SKU-137719</p>
+                <p class="price">฿2,890.00</p>
+    
+              
+                <div class="quantity-controls">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+    
+               
+                <button class="cart-btn" onclick="addToCart()">เพิ่มในตะกร้า</button>
+              
+                 <button class="buy-now-btn" onclick="buyNow()">ซื้อเลย</button>
+
+                 
+     
+            </div>
+        </div>
+    
+        <script>
+          
+            function increaseQuantity() {
+                let quantity = document.getElementById("quantity").value;
+                quantity = parseInt(quantity) + 1;
+                document.getElementById("quantity").value = quantity;
+            }
+    
+            
+            function decreaseQuantity() {
+                let quantity = document.getElementById("quantity").value;
+                if (quantity > 1) {
+                    quantity = parseInt(quantity) - 1;
+                    document.getElementById("quantity").value = quantity;
+                }
+            }
+    
+            function addToCart() {
+                let quantity = document.getElementById("quantity").value;
+                alert("เพิ่มสินค้าในตะกร้า: จำนวน " + quantity);
+            }
+    
+            function buyNow() {
+                let quantity = document.getElementById("quantity").value;
+                alert("คุณได้ซื้อสินค้า: จำนวน " + quantity);
+                
+            }
+        </script>
+    
+    </body>
+    </html>
+    
+</div>
+</div>
+</body>
+</html>
+
+    

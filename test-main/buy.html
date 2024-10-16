@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+</head>
+<body>
+        <header>
+            <div class="header">
+                <span class="header-text">PC Pls</span>
+                <h2><a href="Login.html">Login</a></h2>
+                <h1><a href="buy.html">🛒ชำระเงิน</a></h1>
+                <div class="input-search">
+                    <span class="iconify"data-icon="bytesize:search"></span>
+                    <input type="search" name="search" id="search" placeholder="Search" oninput="filterCars()">
+                  </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="หน้าหลัก.html">หน้าหลัก</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <header>
+        
+        <div class="container">
+            <h1>ชำระเงิน</h1>
+    
+            
+            <h3>ข้อมูลการสั่งซื้อ</h3>
+            <p>ชื่อสินค้า: </p>
+            <p>จำนวน: </p>
+            <p>ราคา: </p>
+    
+            <h3>ข้อมูลการชำระเงิน</h3>
+            <form action="process_payment.php" method="POST">
+                <label for="name">ชื่อบนบัตร:</label>
+                <input type="text" id="name" name="card_name" placeholder="กรอกชื่อบนบัตร" required>
+    
+                <label for="card-number">หมายเลขบัตรเครดิต/เดบิต:</label>
+                <input type="number" id="card-number" name="card_number" placeholder="กรอกหมายเลขบัตร" required>
+    
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" placeholder="กรอก CVV" required>
+    
+                <button type="submit">ชำระเงิน</button>
+            </form>
+        </div>
+</body>
+</html>
